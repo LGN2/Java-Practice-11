@@ -68,7 +68,7 @@ public class Main {
 
         IO.println("--- ALL STOCK ---");
 
-        for (Sellable item : stock) {
+        for (Sellable item : st) {
             item.printAllInfo();
         }
     }
