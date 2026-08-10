@@ -111,16 +111,16 @@ public class Main {
             IO.println("5. Exit");
             IO.print("Choose: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            int choice = sc.nextInt();
+            sc.nextLine();
 
             if (choice == 1) {
 
-                rentals.add(addCar());
+                r.add(addCar());
 
             } else if (choice == 2) {
 
-                rentals.add(addMotorbike());
+                r.add(addMotorbike());
 
             } else if (choice == 3) {
 
