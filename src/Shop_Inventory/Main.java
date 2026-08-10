@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         setup();
         menu();
-        scanner.close();
+        sc.close();
     }
 
     public static void setup() {
