@@ -5,8 +5,6 @@ public class Service extends SellableBase {
 
     private int minutes;
 
-    public Service() {
-    }
 
     public Service(String name, double price, int minutes) {
         super(name, price);
