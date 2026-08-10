@@ -94,7 +94,7 @@ public class Main {
 
         IO.println("--- ALL MEMBERS ---");
 
-        for (Payable member : members) {
+        for (Payable member : m) {
             member.printAllInfo();
         }
     }
@@ -103,7 +103,7 @@ public class Main {
 
         double total = 0;
 
-        for (Payable member : members) {
+        for (Payable member : m) {
 
             total = total + member.monthlyTotal();
         }
