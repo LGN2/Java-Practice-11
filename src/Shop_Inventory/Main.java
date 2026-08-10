@@ -81,7 +81,7 @@ public class Main {
             total += item.getPrice();
         }
 
-        IO.println("Total value of stock: %.2f OMR%n" + total);
+        IO.println("Total value of stock: OMR " + total);
     }
 
     public static void menu() {
