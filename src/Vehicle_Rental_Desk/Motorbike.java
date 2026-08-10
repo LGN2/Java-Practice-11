@@ -73,11 +73,6 @@ public class Motorbike implements Rentable {
     @Override
     public void printAllInfo() {
 
-        System.out.printf(
-                "[Motorbike] Plate: %s | Rate: %.3f OMR/day | Engine: %d cc%n",
-                plateNumber,
-                dailyRate,
-                engineSize
-        );
+        IO.println("[Motorbike] Plate: "+ plateNumber +" Rate: "+ dailyRate+" OMR/day " + " Engine: "+engineSize);
     }
 }
