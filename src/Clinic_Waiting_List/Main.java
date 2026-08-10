@@ -70,7 +70,7 @@ public class Main {
 
         IO.println("--- CLINIC QUEUE ---");
 
-        for (Attendable item : queue) {
+        for (Attendable item : q) {
             item.printAllInfo();
         }
     }
@@ -80,7 +80,7 @@ public class Main {
         int longestWait = 0;
         String longestName = "";
 
-        for (Attendable item : queue) {
+        for (Attendable item : q) {
 
             if (item.getWaitMinutes() > longestWait) {
 
@@ -112,16 +112,16 @@ public class Main {
             IO.println("5. Exit");
             IO.print("Choose: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            int choice = sc.nextInt();
+            sc.nextLine();
 
             if (choice == 1) {
 
-                queue.add(addBooked());
+                q.add(addBooked());
 
             } else if (choice == 2) {
 
-                queue.add(addWalkIn());
+                q.add(addWalkIn());
 
             } else if (choice == 3) {
 
