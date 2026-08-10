@@ -97,12 +97,9 @@ public class MonthlyMember implements Payable {
     @Override
     public void printAllInfo() {
 
-        System.out.printf(
-                "[Monthly] ID: %d | Name: %s | Age: %d | Fee: %.2f OMR%n",
-                membershipId,
-                memberName,
-                age,
-                monthlyFee
-        );
+        IO.println("[Monthly] ID: "+membershipId
+                        +" Name: "+memberName
+                        +" Age: "+ age
+                        +" Fee: "+monthlyFee+" OMR");
     }
 }
