@@ -108,7 +108,7 @@ public class Main {
             System.out.println("--- LIBRARY MENU ---");
             System.out.println("1. Add book");
             System.out.println("2. Add magazine");
-            System.out.println("3. Print all");
+            IO.println("3. Print all");
             IO.println("4. Count items");
             IO.println("5. Exit");
             IO.print("Choose: ");
