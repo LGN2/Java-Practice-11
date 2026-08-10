@@ -139,7 +139,7 @@ public class Main {
 
             } else {
 
-                System.out.println("Invalid choice.");
+                IO.println("Invalid choice.");
             }
         }
     }
