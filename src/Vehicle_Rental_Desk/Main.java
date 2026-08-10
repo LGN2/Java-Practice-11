@@ -52,14 +52,14 @@ public class Main {
     public static Motorbike addMotorbike() {
 
         IO.print("Enter plate number: ");
-        String plateNumber = scanner.nextLine();
+        String plateNumber = sc.nextLine();
 
         IO.print("Enter daily rate: ");
-        double dailyRate = scanner.nextDouble();
+        double dailyRate = sc.nextDouble();
 
         IO.print("Enter engine size in cc: ");
-        int engineSize = scanner.nextInt();
-        scanner.nextLine();
+        int engineSize = sc.nextInt();
+        sc.nextLine();
 
         Motorbike motorbike = new Motorbike(
                 plateNumber,
