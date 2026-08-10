@@ -8,11 +8,6 @@ public class DayPassVisitor implements Payable {
     private int visits;
     private final int membershipId;
 
-    /*
-     * membershipId has a getter but no setter.
-     * It is final because the ID must never change
-     * after the visitor is created.
-     */
 
     public DayPassVisitor(
             String memberName,

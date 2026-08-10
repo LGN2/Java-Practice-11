@@ -7,12 +7,6 @@ public class MonthlyMember implements Payable {
     private double monthlyFee;
     private final int membershipId;
 
-    /*
-     * membershipId has a getter but no setter.
-     * It is final because the membership ID must never change
-     * after the object is created.
-     */
-
     public MonthlyMember(
             String memberName,
             int age,

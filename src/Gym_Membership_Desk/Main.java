@@ -156,15 +156,15 @@ public class Main {
 
         while (exit == false) {
 
-            System.out.println();
-            System.out.println("--- GYM MEMBERSHIP MENU ---");
-            System.out.println("1. Add a monthly member");
-            System.out.println("2. Add a day-pass visitor");
-            System.out.println("3. Print all members");
-            System.out.println("4. Show total monthly income");
-            System.out.println("5. Search a member by name");
-            System.out.println("6. Exit");
-            System.out.print("Choose: ");
+            IO.println();
+            IO.println("--- GYM MEMBERSHIP MENU ---");
+            IO.println("1. Add a monthly member");
+            IO.println("2. Add a day-pass visitor");
+            IO.println("3. Print all members");
+            IO.println("4. Show total monthly income");
+            IO.println("5. Search a member by name");
+            IO.println("6. Exit");
+            IO.print("Choose: ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -192,11 +192,11 @@ public class Main {
             } else if (choice == 6) {
 
                 exit = true;
-                System.out.println("Goodbye.");
+                IO.println("Goodbye.");
 
             } else {
 
-                System.out.println("Invalid choice.");
+                IO.println("Invalid choice.");
             }
         }
     }
