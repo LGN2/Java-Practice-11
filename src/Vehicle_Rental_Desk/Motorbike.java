@@ -6,8 +6,6 @@ public class Motorbike implements Rentable {
     private double dailyRate;
     private int engineSize;
 
-    public Motorbike() {
-    }
 
     public Motorbike(String plateNumber, double dailyRate, int engineSize) {
         setPlateNumber(plateNumber);
@@ -22,7 +20,7 @@ public class Motorbike implements Rentable {
     public void setPlateNumber(String plateNumber) {
 
         if (plateNumber == null || plateNumber.trim().isEmpty()) {
-            System.out.println("Plate number cannot be empty.");
+            IO.println("Plate number cannot be empty.");
         } else {
             this.plateNumber = plateNumber;
         }
@@ -37,7 +35,7 @@ public class Motorbike implements Rentable {
         if (dailyRate > 0 && dailyRate <= 200) {
             this.dailyRate = dailyRate;
         } else {
-            System.out.println("Daily rate must be above 0 and not more than 200.");
+            IO.println("Daily rate must be above 0 and not more than 200.");
         }
     }
 
@@ -50,7 +48,7 @@ public class Motorbike implements Rentable {
         if (engineSize >= 50 && engineSize <= 1500) {
             this.engineSize = engineSize;
         } else {
-            System.out.println("Engine size must be between 50 and 1500 cc.");
+            IO.println("Engine size must be between 50 and 1500 cc.");
         }
     }
 
@@ -66,7 +64,7 @@ public class Motorbike implements Rentable {
             return dailyRate * days;
         }
 
-        System.out.println("Rental days must be from 1 to 30.");
+        IO.println("Rental days must be from 1 to 30.");
         return 0;
     }
 
