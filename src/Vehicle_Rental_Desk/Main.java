@@ -114,14 +114,14 @@ public class Main {
 
         while (exit == false) {
 
-            System.out.println();
-            System.out.println("--- VEHICLE RENTAL MENU ---");
-            System.out.println("1. Add a car");
-            System.out.println("2. Add a motorbike");
-            System.out.println("3. Print everything on hire");
-            System.out.println("4. Show total income");
-            System.out.println("5. Exit");
-            System.out.print("Choose: ");
+            IO.println();
+            IO.println("--- VEHICLE RENTAL MENU ---");
+            IO.println("1. Add a car");
+            IO.println("2. Add a motorbike");
+            IO.println("3. Print everything on hire");
+            IO.println("4. Show total income");
+            IO.println("5. Exit");
+            IO.print("Choose: ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -145,11 +145,11 @@ public class Main {
             } else if (choice == 5) {
 
                 exit = true;
-                System.out.println("Goodbye.");
+                IO.println("Goodbye.");
 
             } else {
 
-                System.out.println("Invalid choice.");
+                IO.println("Invalid choice.");
             }
         }
     }
