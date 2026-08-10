@@ -104,7 +104,7 @@ public class Main {
 
         while (exit == false) {
 
-            System.out.println();
+            IO.println();
             IO.println("--- LIBRARY MENU ---");
             IO.println("1. Add book");
             IO.println("2. Add magazine");
