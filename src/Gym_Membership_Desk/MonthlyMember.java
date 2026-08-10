@@ -25,9 +25,7 @@ public class MonthlyMember implements Payable {
         }
     }
 
-    public String getMemberName() {
-        return memberName;
-    }
+
 
     public void setMemberName(String memberName) {
 

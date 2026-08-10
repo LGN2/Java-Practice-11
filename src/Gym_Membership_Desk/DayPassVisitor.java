@@ -32,9 +32,7 @@ public class DayPassVisitor implements Payable {
         }
     }
 
-    public String getMemberName() {
-        return memberName;
-    }
+
 
     public void setMemberName(String memberName) {
 
@@ -124,15 +122,8 @@ public class DayPassVisitor implements Payable {
     @Override
     public void printAllInfo() {
 
-        System.out.printf(
-                "[Day Pass] ID: %d | Name: %s | Age: %d | " +
-                        "Price: %.2f OMR | Visits: %d | Total: %.2f OMR%n",
-                membershipId,
-                memberName,
-                age,
-                pricePerVisit,
-                visits,
-                monthlyTotal()
-        );
+        IO.println("[Day Pass] ID: "+membershipId+" Name: "+memberName+" Age: "+age+" "
+                + "Price: "+pricePerVisit+" OMR "
+                +" Visits: "+visits+" Total: "+monthlyTotal()+" OMR");
     }
 }
