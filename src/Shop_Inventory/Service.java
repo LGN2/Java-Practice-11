@@ -32,12 +32,7 @@ public class Service extends SellableBase {
 
     @Override
     public void printAllInfo() {
-        System.out.printf(
-                "[Service] %s %.2f OMR %d min%n",
-                getName(),
-                getPrice(),
-                getMinutes()
-        );
+        IO.println("[Service] %s %.2f OMR %d min%n" + getName() + getPrice() +getMinutes());
     }
 }
 
