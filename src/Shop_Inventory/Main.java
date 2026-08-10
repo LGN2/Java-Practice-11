@@ -95,7 +95,7 @@ public class Main {
 
             System.out.println();
             System.out.println("--- SHOP MENU ---");
-            System.out.println("1. Add product");
+            IO.println("1. Add product");
             IO.println("2. Add service");
             IO.println("3. Print stock");
             IO.println("4. Total value");
