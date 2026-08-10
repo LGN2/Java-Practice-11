@@ -82,7 +82,7 @@ public class Main {
 
     public static void printAllRentals() {
 
-        System.out.println("--- EVERYTHING ON HIRE ---");
+        IO.println("--- EVERYTHING ON HIRE ---");
 
         for (Rentable item : rentals) {
             item.printAllInfo();
@@ -91,7 +91,7 @@ public class Main {
 
     public static void showTotalIncome() {
 
-        System.out.print("Enter rental days: ");
+        IO.print("Enter rental days: ");
         int days = scanner.nextInt();
         scanner.nextLine();
 
@@ -101,11 +101,7 @@ public class Main {
             total = total + item.costFor(days);
         }
 
-        System.out.printf(
-                "Total income for %d days: %.3f OMR%n",
-                days,
-                total
-        );
+        IO.println("Total income for days:" + days + " " + total + " OMR");
     }
 
     public static void menu() {
