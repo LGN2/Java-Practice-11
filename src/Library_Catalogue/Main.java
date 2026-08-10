@@ -36,15 +36,15 @@ public class Main {
 
         Book book = new Book();
 
-        System.out.print("Enter title: ");
+        IO.print("Enter title: ");
         String title = scanner.nextLine();
         book.setTitle(title);
 
-        System.out.print("Enter author: ");
+        IO.print("Enter author: ");
         String author = scanner.nextLine();
         book.setAuthor(author);
 
-        System.out.print("Enter pages: ");
+        IO.print("Enter pages: ");
         int pages = scanner.nextInt();
         scanner.nextLine();
         book.setPages(pages);
