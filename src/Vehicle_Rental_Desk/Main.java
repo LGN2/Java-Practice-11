@@ -5,15 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-
-    /*
-     * Abstraction is provided by the Rentable interface because
-     * the menu works with Rentable objects instead of specific classes.
-     *
-     * Encapsulation is provided by private fields and getters/setters
-     * that control how values are stored and validated.
-     */
-
+    
     static Scanner scanner = new Scanner(System.in);
     static List<Rentable> rentals = new ArrayList<>();
 
@@ -25,7 +17,7 @@ public class Main {
 
     public static void setup() {
 
-        System.out.println("--- Single rental created at startup ---");
+        IO.println("--- Single rental created at startup ---");
 
         Car firstCar = new Car("ABC-123", 20.000, 5);
 
