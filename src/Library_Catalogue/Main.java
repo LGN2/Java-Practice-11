@@ -111,7 +111,7 @@ public class Main {
             System.out.println("3. Print all");
             System.out.println("4. Count items");
             System.out.println("5. Exit");
-            System.out.print("Choose: ");
+            IO.print("Choose: ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
