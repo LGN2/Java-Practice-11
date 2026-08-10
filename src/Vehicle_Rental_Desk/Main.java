@@ -76,7 +76,7 @@ public class Main {
 
         IO.println("--- EVERYTHING ON HIRE ---");
 
-        for (Rentable item : rentals) {
+        for (Rentable item : r) {
             item.printAllInfo();
         }
     }
@@ -84,12 +84,12 @@ public class Main {
     public static void showTotalIncome() {
 
         IO.print("Enter rental days: ");
-        int days = scanner.nextInt();
-        scanner.nextLine();
+        int days = sc.nextInt();
+        sc.nextLine();
 
         double total = 0;
 
-        for (Rentable item : rentals) {
+        for (Rentable item : r) {
             total = total + item.costFor(days);
         }
 
