@@ -71,7 +71,7 @@ public class Main {
         scanner.nextLine();
         magazine.setIssueNumber(issueNumber);
 
-        System.out.print("Enter month: ");
+        IO.print("Enter month: ");
         String month = scanner.nextLine();
         magazine.setMonth(month);
 
