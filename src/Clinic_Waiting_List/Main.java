@@ -17,10 +17,11 @@ public class Main {
 
     public static void setup() {
 
-        System.out.println("--- Single item created at startup ---");
+        IO.println("--- Single item created at startup ---");
 
-        BookedPatient firstPatient =
-                new BookedPatient("Sarah Bennett", 150, "09:30");
+        BookedPatient firstPatient = new BookedPatient("Sarah Bennett",
+                150,
+                "09:30");
 
         firstPatient.printAllInfo();
 
@@ -29,20 +30,19 @@ public class Main {
 
     public static BookedPatient addBooked() {
 
-        System.out.print("Enter name: ");
+        IO.print("Enter name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter age: ");
+        IO.print("Enter age: ");
         int age = scanner.nextInt();
         scanner.nextLine();
 
-        System.out.print("Enter slot time: ");
+        IO.print("Enter slot time: ");
         String slotTime = scanner.nextLine();
 
-        BookedPatient patient =
-                new BookedPatient(name, age, slotTime);
+        BookedPatient patient = new BookedPatient(name, age, slotTime);
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return patient;
     }
