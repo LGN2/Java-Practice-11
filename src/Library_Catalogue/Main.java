@@ -79,7 +79,7 @@ public class Main {
         String shelfCode = scanner.nextLine();
         magazine.setShelfCode(shelfCode);
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return magazine;
     }
