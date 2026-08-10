@@ -20,7 +20,7 @@ public abstract class SellableBase implements Sellable {
 
     public void setName(String name) {
         if (name == null || name.trim().isEmpty()) {
-            System.out.println("Name cannot be empty.");
+            IO.println("Name cannot be empty.");
         } else {
             this.name = name;
         }
