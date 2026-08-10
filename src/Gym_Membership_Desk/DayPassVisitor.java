@@ -27,21 +27,17 @@ public class DayPassVisitor implements Payable {
 
         } else {
 
-            System.out.println("Membership ID must be above 0.");
+            IO.println("Membership ID must be above 0.");
             this.membershipId = 1;
         }
     }
 
 
-
     public void setMemberName(String memberName) {
 
-        if (memberName == null ||
-                memberName.trim().length() < 2) {
+        if (memberName == null || memberName.trim().length() < 2) {
 
-            System.out.println(
-                    "Member name must be at least 2 characters."
-            );
+            IO.println("Member name must be at least 2 characters.");
 
         } else {
 
@@ -57,11 +53,11 @@ public class DayPassVisitor implements Payable {
 
         if (age < 14) {
 
-            System.out.println("Too young to register .");
+            IO.println("Too young to register .");
 
         } else if (age > 90) {
 
-            System.out.println("Age must be between 14 and 90.");
+            IO.println("Age must be between 14 and 90.");
 
         } else {
 
@@ -81,9 +77,7 @@ public class DayPassVisitor implements Payable {
 
         } else {
 
-            System.out.println(
-                    "Price per visit must be above 0."
-            );
+            IO.println("Price per visit must be above 0.");
         }
     }
 
@@ -99,9 +93,7 @@ public class DayPassVisitor implements Payable {
 
         } else {
 
-            System.out.println(
-                    "Visits must be from 1 to 31."
-            );
+            IO.println("Visits must be from 1 to 31.");
         }
     }
 
@@ -122,8 +114,8 @@ public class DayPassVisitor implements Payable {
     @Override
     public void printAllInfo() {
 
-        IO.println("[Day Pass] ID: "+membershipId+" Name: "+memberName+" Age: "+age+" "
-                + "Price: "+pricePerVisit+" OMR "
-                +" Visits: "+visits+" Total: "+monthlyTotal()+" OMR");
+        IO.println("[Day Pass] ID: " + membershipId + " Name: " + memberName + " Age: " + age + " "
+                + "Price: " + pricePerVisit + " OMR "
+                + " Visits: " + visits + " Total: " + monthlyTotal() + " OMR");
     }
 }
