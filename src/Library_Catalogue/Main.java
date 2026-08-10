@@ -62,7 +62,7 @@ public class Main {
 
         Magazine magazine = new Magazine();
 
-        System.out.print("Enter magazine name: ");
+        IO.print("Enter magazine name: ");
         String name = scanner.nextLine();
         magazine.setName(name);
 
