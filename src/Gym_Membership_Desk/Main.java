@@ -61,20 +61,20 @@ public class Main {
     public static DayPassVisitor addDayPassVisitor() {
 
         IO.print("Enter member name: ");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
 
         IO.print("Enter age: ");
-        int age = scanner.nextInt();
+        int age = sc.nextInt();
 
         IO.print("Enter price per visit: ");
-        double price = scanner.nextDouble();
+        double price = sc.nextDouble();
 
         IO.print("Enter number of visits: ");
-        int visits = scanner.nextInt();
+        int visits = sc.nextInt();
 
         IO.print("Enter membership ID: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = sc.nextInt();
+        sc.nextLine();
 
         DayPassVisitor visitor =
                 new DayPassVisitor(
