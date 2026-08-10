@@ -113,8 +113,8 @@ public class Main {
             IO.println("5. Exit");
             IO.print("Choose: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            int choice = sc.nextInt();
+            sc.nextLine();
 
             if (choice == 1) {
 
