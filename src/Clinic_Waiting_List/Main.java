@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner scanner = new Scanner(System.in);
-    static List<Attendable> queue = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+    static List<Attendable> q = new ArrayList<>();
 
     public static void main(String[] args) {
         setup();
         menu();
-        scanner.close();
+        sc.close();
     }
 
     public static void setup() {
@@ -25,20 +25,20 @@ public class Main {
 
         firstPatient.printAllInfo();
 
-        queue.add(firstPatient);
+        q.add(firstPatient);
     }
 
     public static BookedPatient addBooked() {
 
         IO.print("Enter name: ");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
 
         IO.print("Enter age: ");
-        int age = scanner.nextInt();
-        scanner.nextLine();
+        int age = sc.nextInt();
+        sc.nextLine();
 
         IO.print("Enter slot time: ");
-        String slotTime = scanner.nextLine();
+        String slotTime = sc.nextLine();
 
         BookedPatient patient = new BookedPatient(name, age, slotTime);
 
@@ -50,14 +50,14 @@ public class Main {
     public static WalkInVisitor addWalkIn() {
 
         IO.print("Enter name: ");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
 
         IO.print("Enter age: ");
-        int age = scanner.nextInt();
+        int age = sc.nextInt();
 
         IO.print("Enter arrival order: ");
-        int arrivalOrder = scanner.nextInt();
-        scanner.nextLine();
+        int arrivalOrder = sc.nextInt();
+        sc.nextLine();
 
         WalkInVisitor visitor = new WalkInVisitor(name, age, arrivalOrder);
 
