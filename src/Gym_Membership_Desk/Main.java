@@ -46,28 +46,26 @@ public class Main {
 
     public static MonthlyMember addMonthlyMember() {
 
-        System.out.print("Enter member name: ");
+        IO.print("Enter member name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter age: ");
+        IO.print("Enter age: ");
         int age = scanner.nextInt();
 
-        System.out.print("Enter monthly fee: ");
+        IO.print("Enter monthly fee: ");
         double fee = scanner.nextDouble();
 
-        System.out.print("Enter membership ID: ");
+        IO.print("Enter membership ID: ");
         int id = scanner.nextInt();
         scanner.nextLine();
 
-        MonthlyMember member =
-                new MonthlyMember(
-                        name,
-                        age,
-                        fee,
-                        id
-                );
+        MonthlyMember member = new MonthlyMember(
+                name,
+                age,
+                fee,
+                id);
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return member;
     }
