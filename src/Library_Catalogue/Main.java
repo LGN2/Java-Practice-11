@@ -110,7 +110,7 @@ public class Main {
             System.out.println("2. Add magazine");
             System.out.println("3. Print all");
             System.out.println("4. Count items");
-            System.out.println("5. Exit");
+            IO.println("5. Exit");
             IO.print("Choose: ");
 
             int choice = scanner.nextInt();
