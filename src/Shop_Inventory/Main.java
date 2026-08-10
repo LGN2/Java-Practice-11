@@ -47,7 +47,7 @@ public class Main {
 
     public static Service addService() {
 
-        System.out.print("Enter service name: ");
+        IO.print("Enter service name: ");
         String name = scanner.nextLine();
 
         IO.print("Enter price: ");
