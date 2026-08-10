@@ -4,9 +4,6 @@ public class BookedPatient extends AttendableBase {
 
     private String slotTime;
 
-    public BookedPatient() {
-    }
-
     public BookedPatient(String name, int age, String slotTime) {
         super(name, age);
         this.slotTime = slotTime;

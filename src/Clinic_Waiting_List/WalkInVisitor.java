@@ -4,9 +4,6 @@ public class WalkInVisitor extends AttendableBase {
 
     private int arrivalOrder;
 
-    public WalkInVisitor() {
-    }
-
     public WalkInVisitor(String name, int age, int arrivalOrder) {
         super(name, age);
         setArrivalOrder(arrivalOrder);
@@ -37,10 +34,7 @@ public class WalkInVisitor extends AttendableBase {
     @Override
     public void printAllInfo() {
         IO.println("[Walk-in] " + getName()
-                + " age "
-                + getAge()
-                + " waits "
-                + getWaitMinutes()
-                + " min");
+                + " age " + getAge()
+                + " waits " + getWaitMinutes() + " min");
     }
 }

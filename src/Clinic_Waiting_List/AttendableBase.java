@@ -6,8 +6,6 @@ public abstract class AttendableBase implements Attendable {
     private String name;
     private int age;
 
-    public AttendableBase() {
-    }
 
     public AttendableBase(String name, int age) {
         setName(name);
@@ -21,7 +19,7 @@ public abstract class AttendableBase implements Attendable {
     public void setName(String name) {
 
         if (name == null || name.isEmpty()) {
-            System.out.println("Name is required.");
+            IO.println("Name is required.");
         } else {
             this.name = name;
         }
@@ -36,7 +34,7 @@ public abstract class AttendableBase implements Attendable {
         if (age >= 0 && age <= 120) {
             this.age = age;
         } else {
-            System.out.println("Invalid age");
+            IO.println("Invalid age");
         }
     }
 
