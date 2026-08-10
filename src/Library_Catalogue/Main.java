@@ -95,7 +95,7 @@ public class Main {
 
     public static void countItems() {
 
-        System.out.println("Total items: " + catalogue.size());
+        IO.println("Total items: " + catalogue.size());
     }
 
     public static void menu() {
