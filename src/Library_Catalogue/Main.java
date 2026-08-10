@@ -66,7 +66,7 @@ public class Main {
         String name = scanner.nextLine();
         magazine.setName(name);
 
-        System.out.print("Enter issue number: ");
+        IO.print("Enter issue number: ");
         int issueNumber = scanner.nextInt();
         scanner.nextLine();
         magazine.setIssueNumber(issueNumber);
