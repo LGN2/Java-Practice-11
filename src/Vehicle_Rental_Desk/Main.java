@@ -29,14 +29,14 @@ public class Main {
     public static Car addCar() {
 
         IO.print("Enter plate number: ");
-        String plateNumber = scanner.nextLine();
+        String plateNumber = sc.nextLine();
 
         IO.print("Enter daily rate: ");
-        double dailyRate = scanner.nextDouble();
+        double dailyRate = sc.nextDouble();
 
         IO.print("Enter number of seats: ");
-        int seats = scanner.nextInt();
-        scanner.nextLine();
+        int seats = sc.nextInt();
+        sc.nextLine();
 
         Car car = new Car(
                 plateNumber,
