@@ -24,7 +24,7 @@ public class Magazine extends LibraryItemBase implements LibraryItem {
 
     public void setName(String name) {
         if (name == null || name.isEmpty()) {
-            System.out.println("Name cannot be empty.");
+            IO.println("Name cannot be empty.");
         } else {
             this.name = name;
         }
@@ -38,7 +38,7 @@ public class Magazine extends LibraryItemBase implements LibraryItem {
         if (issueNumber >= 1 && issueNumber <= 500) {
             this.issueNumber = issueNumber;
         } else {
-            System.out.println("Invalid issue number.");
+            IO.println("Invalid issue number.");
         }
     }
 
