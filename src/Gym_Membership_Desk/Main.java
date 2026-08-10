@@ -122,15 +122,12 @@ public class Main {
             total = total + member.monthlyTotal();
         }
 
-        System.out.printf(
-                "Total monthly income: %.2f OMR%n",
-                total
-        );
+        IO.println("Total monthly income: "+ total +" OMR");
     }
 
     public static void searchMember() {
 
-        System.out.print("Enter name to search: ");
+        IO.print("Enter name to search: ");
         String searchName = scanner.nextLine();
 
         boolean found = false;
@@ -146,7 +143,7 @@ public class Main {
 
         if (found == false) {
 
-            System.out.println("Member not found.");
+            IO.println("Member not found.");
         }
     }
 
