@@ -63,20 +63,20 @@ public class Main {
         Magazine magazine = new Magazine();
 
         IO.print("Enter magazine name: ");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
         magazine.setName(name);
 
         IO.print("Enter issue number: ");
-        int issueNumber = scanner.nextInt();
-        scanner.nextLine();
+        int issueNumber = sc.nextInt();
+        sc.nextLine();
         magazine.setIssueNumber(issueNumber);
 
         IO.print("Enter month: ");
-        String month = scanner.nextLine();
+        String month = sc.nextLine();
         magazine.setMonth(month);
 
         IO.print("Enter shelf code: ");
-        String shelfCode = scanner.nextLine();
+        String shelfCode = sc.nextLine();
         magazine.setShelfCode(shelfCode);
 
         IO.println("Added.");
