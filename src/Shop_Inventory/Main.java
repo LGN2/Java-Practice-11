@@ -29,14 +29,14 @@ public class Main {
     public static Product addProduct() {
 
         IO.print("Enter product name: ");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
 
         IO.print("Enter price: ");
-        double price = scanner.nextDouble();
+        double price = sc.nextDouble();
 
         IO.print("Enter quantity: ");
-        int quantity = scanner.nextInt();
-        scanner.nextLine();
+        int quantity = sc.nextInt();
+        sc.nextLine();
 
         Product product = new Product(name, price, quantity);
 
