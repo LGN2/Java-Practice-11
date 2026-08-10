@@ -75,7 +75,7 @@ public class Main {
         String month = scanner.nextLine();
         magazine.setMonth(month);
 
-        System.out.print("Enter shelf code: ");
+        IO.print("Enter shelf code: ");
         String shelfCode = scanner.nextLine();
         magazine.setShelfCode(shelfCode);
 
