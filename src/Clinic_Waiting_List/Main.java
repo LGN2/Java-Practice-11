@@ -107,14 +107,14 @@ public class Main {
 
         while (exit == false) {
 
-            System.out.println();
-            System.out.println("--- CLINIC MENU ---");
-            System.out.println("1. Add booked patient");
-            System.out.println("2. Add walk-in");
-            System.out.println("3. Print queue");
-            System.out.println("4. Longest wait");
-            System.out.println("5. Exit");
-            System.out.print("Choose: ");
+            IO.println();
+            IO.println("--- CLINIC MENU ---");
+            IO.println("1. Add booked patient");
+            IO.println("2. Add walk-in");
+            IO.println("3. Print queue");
+            IO.println("4. Longest wait");
+            IO.println("5. Exit");
+            IO.print("Choose: ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
