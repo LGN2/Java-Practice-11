@@ -17,7 +17,7 @@ public class Main {
 
     public static void setup() {
 
-        System.out.println("--- Single item created at startup ---");
+        IO.println("--- Single item created at startup ---");
 
         Product firstProduct = new Product("Rice 5kg", -5, 12);
 
