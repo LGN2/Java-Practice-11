@@ -6,38 +6,26 @@ import java.util.Scanner;
 
 public class Main {
 
-    /*
-     * Abstraction is provided by the Payable interface because
-     * the menu can work with both member types without knowing
-     * their specific class.
-     *
-     * Encapsulation is provided by private fields and setters
-     * that validate data before storing it.
-     *
-     * If memberName were public, the program could do something
-     * like member.memberName = ""; and skip the name validation rule.
-     */
 
-    static Scanner scanner = new Scanner(System.in);
-    static List<Payable> members = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+    static List<Payable> m = new ArrayList<>();
 
     public static void main(String[] args) {
         setup();
         menu();
-        scanner.close();
+        sc.close();
     }
 
     public static void setup() {
 
-        System.out.println("--- Single member created at startup ---");
+        IO.println("--- Single member created at startup ---");
 
         MonthlyMember firstMember =
                 new MonthlyMember(
                         "Sarah Bennett",
                         25,
                         45.000,
-                        1001
-                );
+                        1001);
 
         firstMember.printAllInfo();
 
