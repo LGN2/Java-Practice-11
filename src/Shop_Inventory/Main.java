@@ -100,7 +100,7 @@ public class Main {
             System.out.println("3. Print stock");
             System.out.println("4. Total value");
             System.out.println("5. Exit");
-            System.out.print("Choose: ");
+            IO.print("Choose: ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
