@@ -86,7 +86,7 @@ public class Main {
 
     public static void printAll() {
 
-        System.out.println("--- ALL LIBRARY ITEMS ---");
+        IO.println("--- ALL LIBRARY ITEMS ---");
 
         for (LibraryItem item : catalogue) {
             item.printAllInfo();
