@@ -36,13 +36,13 @@ public class Main {
 
     public static Car addCar() {
 
-        System.out.print("Enter plate number: ");
+        IO.print("Enter plate number: ");
         String plateNumber = scanner.nextLine();
 
-        System.out.print("Enter daily rate: ");
+        IO.print("Enter daily rate: ");
         double dailyRate = scanner.nextDouble();
 
-        System.out.print("Enter number of seats: ");
+        IO.print("Enter number of seats: ");
         int seats = scanner.nextInt();
         scanner.nextLine();
 
@@ -52,7 +52,7 @@ public class Main {
                 seats
         );
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return car;
     }
