@@ -154,11 +154,11 @@ public class Main {
 
             if (choice == 1) {
 
-                members.add(addMonthlyMember());
+                m.add(addMonthlyMember());
 
             } else if (choice == 2) {
 
-                members.add(addDayPassVisitor());
+                m.add(addDayPassVisitor());
 
             } else if (choice == 3) {
 
