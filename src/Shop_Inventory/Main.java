@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     static Scanner sc = new Scanner(System.in);
-    static List<Sellable> stock = new ArrayList<>();
+    static List<Sellable> st = new ArrayList<>();
 
     public static void main(String[] args) {
         setup();
