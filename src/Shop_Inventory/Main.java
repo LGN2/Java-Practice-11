@@ -104,7 +104,7 @@ public class Main {
 
             if (choice == 1) {
 
-                stock.add(addProduct());
+                st.add(addProduct());
 
             } else if (choice == 2) {
 
