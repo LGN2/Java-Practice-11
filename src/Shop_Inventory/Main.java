@@ -124,7 +124,7 @@ public class Main {
             } else if (choice == 5) {
 
                 exit = true;
-                System.out.println("Goodbye.");
+                IO.println("Goodbye.");
 
             } else {
 
