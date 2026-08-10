@@ -108,7 +108,7 @@ public class Main {
             total = total + member.monthlyTotal();
         }
 
-        IO.println("Total monthly income: "+ total +" OMR");
+        IO.println("Total monthly income: " + total + " OMR");
     }
 
     public static void searchMember() {
