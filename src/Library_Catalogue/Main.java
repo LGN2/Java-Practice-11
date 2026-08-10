@@ -7,18 +7,18 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner scanner = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
     static List<LibraryItem> catalogue = new ArrayList<>();
 
     public static void main(String[] args) {
         setup();
         menu();
-        scanner.close();
+        sc.close();
     }
 
     public static void setup() {
 
-        System.out.println("--- Single item created at startup ---");
+        IO.println("--- Single item created at startup ---");
 
         Book firstBook = new Book(
                 "Clean Code",
@@ -37,20 +37,20 @@ public class Main {
         Book book = new Book();
 
         IO.print("Enter title: ");
-        String title = scanner.nextLine();
+        String title = sc.nextLine();
         book.setTitle(title);
 
         IO.print("Enter author: ");
-        String author = scanner.nextLine();
+        String author = sc.nextLine();
         book.setAuthor(author);
 
         IO.print("Enter pages: ");
-        int pages = scanner.nextInt();
-        scanner.nextLine();
+        int pages = sc.nextInt();
+        sc.nextLine();
         book.setPages(pages);
 
         IO.print("Enter shelf code: ");
-        String shelfCode = scanner.nextLine();
+        String shelfCode = sc.nextLine();
         book.setShelfCode(shelfCode);
 
         IO.println("Added.");
