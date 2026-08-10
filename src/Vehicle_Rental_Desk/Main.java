@@ -67,7 +67,7 @@ public class Main {
                 engineSize
         );
 
-       IO.println("Added.");
+        IO.println("Added.");
 
         return motorbike;
     }
