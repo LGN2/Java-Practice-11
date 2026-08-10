@@ -93,7 +93,7 @@ public class Main {
 
         while (exit == false) {
 
-            System.out.println();
+            IO.println();
             IO.println("--- SHOP MENU ---");
             IO.println("1. Add product");
             IO.println("2. Add service");
