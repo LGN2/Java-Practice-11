@@ -4,9 +4,7 @@ package Shop_Inventory;
 public class Product extends SellableBase {
 
     private int quantity;
-
-    public Product() {
-    }
+    
 
     public Product(String name, double price, int quantity) {
         super(name, price);
