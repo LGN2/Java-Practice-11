@@ -49,27 +49,26 @@ public class Main {
 
     public static WalkInVisitor addWalkIn() {
 
-        System.out.print("Enter name: ");
+        IO.print("Enter name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter age: ");
+        IO.print("Enter age: ");
         int age = scanner.nextInt();
 
-        System.out.print("Enter arrival order: ");
+        IO.print("Enter arrival order: ");
         int arrivalOrder = scanner.nextInt();
         scanner.nextLine();
 
-        WalkInVisitor visitor =
-                new WalkInVisitor(name, age, arrivalOrder);
+        WalkInVisitor visitor = new WalkInVisitor(name, age, arrivalOrder);
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return visitor;
     }
 
     public static void printQueue() {
 
-        System.out.println("--- CLINIC QUEUE ---");
+        IO.println("--- CLINIC QUEUE ---");
 
         for (Attendable item : queue) {
             item.printAllInfo();
