@@ -29,23 +29,23 @@ public class Main {
 
         firstMember.printAllInfo();
 
-        members.add(firstMember);
+        m.add(firstMember);
     }
 
     public static MonthlyMember addMonthlyMember() {
 
         IO.print("Enter member name: ");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
 
         IO.print("Enter age: ");
-        int age = scanner.nextInt();
+        int age = sc.nextInt();
 
         IO.print("Enter monthly fee: ");
-        double fee = scanner.nextDouble();
+        double fee = sc.nextDouble();
 
         IO.print("Enter membership ID: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = sc.nextInt();
+        sc.nextLine();
 
         MonthlyMember member = new MonthlyMember(
                 name,
