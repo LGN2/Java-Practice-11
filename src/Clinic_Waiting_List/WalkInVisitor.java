@@ -36,10 +36,11 @@ public class WalkInVisitor extends AttendableBase {
 
     @Override
     public void printAllInfo() {
-        System.out.println(
-                "[Walk-in] " + getName()
-                        + " age " + getAge()
-                        + " waits " + getWaitMinutes() + " min"
-        );
+        IO.println("[Walk-in] " + getName()
+                + " age "
+                + getAge()
+                + " waits "
+                + getWaitMinutes()
+                + " min");
     }
 }
