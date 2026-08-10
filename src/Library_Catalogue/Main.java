@@ -49,7 +49,7 @@ public class Main {
         scanner.nextLine();
         book.setPages(pages);
 
-        System.out.print("Enter shelf code: ");
+        IO.print("Enter shelf code: ");
         String shelfCode = scanner.nextLine();
         book.setShelfCode(shelfCode);
 
