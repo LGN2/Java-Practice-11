@@ -28,11 +28,9 @@ public class BookedPatient extends AttendableBase {
 
     @Override
     public void printAllInfo() {
-        System.out.println(
-                "[Booked] " + getName()
-                        + ", age " + getAge()
-                        + ", slot " + getSlotTime()
-                        + ", waits " + getWaitMinutes() + " min"
-        );
+        IO.println("[Booked] " + getName()
+                + ", age " + getAge()
+                + ", slot " + getSlotTime()
+                + ", waits " + getWaitMinutes() + " min");
     }
 }
