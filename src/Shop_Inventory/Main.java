@@ -108,7 +108,7 @@ public class Main {
 
             } else if (choice == 2) {
 
-                stock.add(addService());
+                st.add(addService());
 
             } else if (choice == 3) {
 
