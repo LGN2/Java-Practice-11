@@ -77,7 +77,7 @@ public class Main {
 
         double total = 0;
 
-        for (Sellable item : stock) {
+        for (Sellable item : st) {
             total += item.getPrice();
         }
 
