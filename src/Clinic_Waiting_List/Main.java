@@ -94,10 +94,7 @@ public class Main {
             }
         }
 
-        System.out.println(
-                "Longest wait: "
-                        + longestName
-                        + " (" + longestWait + " min)"
+        IO.println("Longest wait: " + longestName + " (" + longestWait + " min)"
         );
     }
 
