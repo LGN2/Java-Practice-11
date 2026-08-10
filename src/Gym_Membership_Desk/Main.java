@@ -1,0 +1,203 @@
+package Gym_Membership_Desk;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+    /*
+     * Abstraction is provided by the Payable interface because
+     * the menu can work with both member types without knowing
+     * their specific class.
+     *
+     * Encapsulation is provided by private fields and setters
+     * that validate data before storing it.
+     *
+     * If memberName were public, the program could do something
+     * like member.memberName = ""; and skip the name validation rule.
+     */
+
+    static Scanner scanner = new Scanner(System.in);
+    static List<Payable> members = new ArrayList<>();
+
+    public static void main(String[] args) {
+        setup();
+        menu();
+        scanner.close();
+    }
+
+    public static void setup() {
+
+        System.out.println("--- Single member created at startup ---");
+
+        MonthlyMember firstMember =
+                new MonthlyMember(
+                        "Sarah Bennett",
+                        25,
+                        45.000,
+                        1001
+                );
+
+        firstMember.printAllInfo();
+
+        members.add(firstMember);
+    }
+
+    public static MonthlyMember addMonthlyMember() {
+
+        System.out.print("Enter member name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+
+        System.out.print("Enter monthly fee: ");
+        double fee = scanner.nextDouble();
+
+        System.out.print("Enter membership ID: ");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+
+        MonthlyMember member =
+                new MonthlyMember(
+                        name,
+                        age,
+                        fee,
+                        id
+                );
+
+        System.out.println("Added.");
+
+        return member;
+    }
+
+    public static DayPassVisitor addDayPassVisitor() {
+
+        System.out.print("Enter member name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+
+        System.out.print("Enter price per visit: ");
+        double price = scanner.nextDouble();
+
+        System.out.print("Enter number of visits: ");
+        int visits = scanner.nextInt();
+
+        System.out.print("Enter membership ID: ");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+
+        DayPassVisitor visitor =
+                new DayPassVisitor(
+                        name,
+                        age,
+                        price,
+                        visits,
+                        id
+                );
+
+        System.out.println("Added.");
+
+        return visitor;
+    }
+
+    public static void printAllMembers() {
+
+        System.out.println("--- ALL MEMBERS ---");
+
+        for (Payable member : members) {
+            member.printAllInfo();
+        }
+    }
+
+    public static void showTotalMonthlyIncome() {
+
+        double total = 0;
+
+        for (Payable member : members) {
+
+            total = total + member.monthlyTotal();
+        }
+
+        System.out.printf(
+                "Total monthly income: %.2f OMR%n",
+                total
+        );
+    }
+
+    public static void searchMember() {
+
+        System.out.print("Enter name to search: ");
+        String searchName = scanner.nextLine();
+
+        boolean found = false;
+
+        for (Payable member : members) {
+
+            if (member.getMemberName().equals(searchName)) {
+
+                member.printAllInfo();
+                found = true;
+            }
+        }
+
+        if (found == false) {
+
+            System.out.println("Member not found.");
+        }
+    }
+
+    public static void menu() {
+
+        boolean exit = false;
+
+        while (exit == false) {
+
+            System.out.println();
+            System.out.println("--- GYM MEMBERSHIP MENU ---");
+            System.out.println("1. Add a monthly member");
+            System.out.println("2. Add a day-pass visitor");
+            System.out.println("3. Print all members");
+            System.out.println("4. Show total monthly income");
+            System.out.println("5. Search a member by name");
+            System.out.println("6. Exit");
+            System.out.print("Choose: ");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            if (choice == 1) {
+
+                members.add(addMonthlyMember());
+
+            } else if (choice == 2) {
+
+                members.add(addDayPassVisitor());
+
+            } else if (choice == 3) {
+
+                printAllMembers();
+
+            } else if (choice == 4) {
+
+                showTotalMonthlyIncome();
+
+            } else if (choice == 5) {
+
+                searchMember();
+
+            } else if (choice == 6) {
+
+                exit = true;
+                System.out.println("Goodbye.");
+
+            } else {
+
+                System.out.println("Invalid choice.");
+            }
+        }
+    }
+}
