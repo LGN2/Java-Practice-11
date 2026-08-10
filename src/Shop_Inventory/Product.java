@@ -21,7 +21,7 @@ public class Product extends SellableBase {
         if (quantity >= 1 && quantity <= 100) {
             this.quantity = quantity;
         } else {
-            System.out.println("Quantity must be 1 to 100.");
+            IO.println("Quantity must be 1 to 100.");
         }
     }
 
