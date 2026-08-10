@@ -114,11 +114,11 @@ public class Main {
     public static void searchMember() {
 
         IO.print("Enter name to search: ");
-        String searchName = scanner.nextLine();
+        String searchName = sc.nextLine();
 
         boolean found = false;
 
-        for (Payable member : members) {
+        for (Payable member : m) {
 
             if (member.getMemberName().equals(searchName)) {
 
