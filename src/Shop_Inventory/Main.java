@@ -31,7 +31,7 @@ public class Main {
         System.out.print("Enter product name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter price: ");
+        IO.print("Enter price: ");
         double price = scanner.nextDouble();
 
         IO.print("Enter quantity: ");
