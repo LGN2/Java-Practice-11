@@ -50,7 +50,7 @@ public class Main {
         System.out.print("Enter service name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter price: ");
+        IO.print("Enter price: ");
         double price = scanner.nextDouble();
 
         IO.print("Enter minutes: ");
