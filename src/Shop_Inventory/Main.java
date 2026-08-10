@@ -66,7 +66,7 @@ public class Main {
 
     public static void printAllStock() {
 
-        System.out.println("--- ALL STOCK ---");
+        IO.println("--- ALL STOCK ---");
 
         for (Sellable item : stock) {
             item.printAllInfo();
@@ -81,7 +81,7 @@ public class Main {
             total += item.getPrice();
         }
 
-        IO.printf("Total value of stock: %.2f OMR%n", total);
+        IO.println("Total value of stock: %.2f OMR%n" + total);
     }
 
     public static void menu() {
