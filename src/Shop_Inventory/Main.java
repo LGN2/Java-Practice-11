@@ -40,7 +40,7 @@ public class Main {
 
         Product product = new Product(name, price, quantity);
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return product;
     }
