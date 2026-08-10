@@ -59,7 +59,7 @@ public class Main {
 
         Service service = new Service(name, price, minutes);
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return service;
     }
