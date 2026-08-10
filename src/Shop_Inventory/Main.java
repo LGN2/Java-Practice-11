@@ -53,7 +53,7 @@ public class Main {
         System.out.print("Enter price: ");
         double price = scanner.nextDouble();
 
-        System.out.print("Enter minutes: ");
+        IO.print("Enter minutes: ");
         int minutes = scanner.nextInt();
         scanner.nextLine();
 
