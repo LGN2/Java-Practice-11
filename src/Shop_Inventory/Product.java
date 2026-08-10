@@ -30,7 +30,7 @@ public class Product extends SellableBase {
 
     @Override
     public void printAllInfo() {
-        IO.println("[Product] %s %.2f OMR qty %d%n"+ getName()+ getPrice()+ getQuantity());
+        IO.println("[Product] " + getName() + " OMR " + getPrice() + " qty %d%n" + getQuantity());
     }
 }
 
