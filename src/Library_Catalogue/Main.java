@@ -53,7 +53,7 @@ public class Main {
         String shelfCode = scanner.nextLine();
         book.setShelfCode(shelfCode);
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return book;
     }
