@@ -23,7 +23,7 @@ public class Main {
 
         firstProduct.printAllInfo();
 
-        stock.add(firstProduct);
+        st.add(firstProduct);
     }
 
     public static Product addProduct() {
