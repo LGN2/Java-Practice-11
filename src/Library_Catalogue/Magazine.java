@@ -57,11 +57,10 @@ public class Magazine extends LibraryItemBase implements LibraryItem {
 
     @Override
     public void printAllInfo() {
-        System.out.println(
-                "Magazine: " + name
-                        + " | Issue " + issueNumber
-                        + " | " + month
-                        + " [Shelf " + getShelfCode() + "]"
+        IO.println("Magazine: " + name
+                + " | Issue " + issueNumber
+                + " | " + month
+                + " [Shelf " + getShelfCode() + "]"
         );
     }
 }
