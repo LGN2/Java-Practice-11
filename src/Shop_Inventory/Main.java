@@ -48,14 +48,14 @@ public class Main {
     public static Service addService() {
 
         IO.print("Enter service name: ");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
 
         IO.print("Enter price: ");
-        double price = scanner.nextDouble();
+        double price = sc.nextDouble();
 
         IO.print("Enter minutes: ");
-        int minutes = scanner.nextInt();
-        scanner.nextLine();
+        int minutes = sc.nextInt();
+        sc.nextLine();
 
         Service service = new Service(name, price, minutes);
 
