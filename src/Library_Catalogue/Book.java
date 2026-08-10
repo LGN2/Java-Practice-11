@@ -24,7 +24,7 @@ public class Book extends LibraryItemBase implements LibraryItem {
 
     public void setTitle(String title) {
         if (title == null || title.isEmpty()) {
-            System.out.println("Name cannot be empty.");
+            IO.println("Name cannot be empty.");
         } else {
             this.title = title;
         }
@@ -47,7 +47,7 @@ public class Book extends LibraryItemBase implements LibraryItem {
             this.pages = pages;
         } else {
             this.pages = 0;
-            System.out.println("Pages must be above 0.");
+            IO.println("Pages must be above 0.");
         }
     }
 
