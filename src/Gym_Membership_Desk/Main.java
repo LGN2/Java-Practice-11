@@ -74,19 +74,19 @@ public class Main {
 
     public static DayPassVisitor addDayPassVisitor() {
 
-        System.out.print("Enter member name: ");
+        IO.print("Enter member name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter age: ");
+        IO.print("Enter age: ");
         int age = scanner.nextInt();
 
-        System.out.print("Enter price per visit: ");
+        IO.print("Enter price per visit: ");
         double price = scanner.nextDouble();
 
-        System.out.print("Enter number of visits: ");
+        IO.print("Enter number of visits: ");
         int visits = scanner.nextInt();
 
-        System.out.print("Enter membership ID: ");
+        IO.print("Enter membership ID: ");
         int id = scanner.nextInt();
         scanner.nextLine();
 
@@ -99,14 +99,14 @@ public class Main {
                         id
                 );
 
-        System.out.println("Added.");
+        IO.println("Added.");
 
         return visitor;
     }
 
     public static void printAllMembers() {
 
-        System.out.println("--- ALL MEMBERS ---");
+        IO.println("--- ALL MEMBERS ---");
 
         for (Payable member : members) {
             member.printAllInfo();
