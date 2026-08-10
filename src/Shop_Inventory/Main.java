@@ -28,7 +28,7 @@ public class Main {
 
     public static Product addProduct() {
 
-        System.out.print("Enter product name: ");
+        IO.print("Enter product name: ");
         String name = scanner.nextLine();
 
         IO.print("Enter price: ");
