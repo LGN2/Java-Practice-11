@@ -58,11 +58,10 @@ public class Book extends LibraryItemBase implements LibraryItem {
 
     @Override
     public void printAllInfo() {
-        System.out.println(
-                "Book: " + title
-                        + " by " + author
-                        + " (" + pages + " pages)"
-                        + " [Shelf " + getShelfCode() + "]"
+        IO.println("Book: " + title
+                + " by " + author
+                + " (" + pages + " pages)"
+                + " [Shelf " + getShelfCode() + "]"
         );
     }
 }
