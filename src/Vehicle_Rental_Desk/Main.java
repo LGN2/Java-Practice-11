@@ -5,14 +5,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    
-    static Scanner scanner = new Scanner(System.in);
-    static List<Rentable> rentals = new ArrayList<>();
+
+    static Scanner sc = new Scanner(System.in);
+    static List<Rentable> r = new ArrayList<>();
 
     public static void main(String[] args) {
         setup();
         menu();
-        scanner.close();
+        sc.close();
     }
 
     public static void setup() {
@@ -23,7 +23,7 @@ public class Main {
 
         firstCar.printAllInfo();
 
-        rentals.add(firstCar);
+        r.add(firstCar);
     }
 
     public static Car addCar() {
